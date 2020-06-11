@@ -1,0 +1,14 @@
+<svg id="Popup_Init">
+  <rect x="0" y="0" width="100%" height="100%" fill="black"/>
+  
+
+  <use id="Init_Text" href="#mixed-text-center-top" height="100%" fill="fb-blue">
+    <set href="#header/text" attributeName="text-length" to="128" />
+    <set href="#header/text" attributeName="text-buffer" to="Initializing"/>
+    <set href="#copy/text" attributeName="text-length" to="128" />
+    <set href="#copy/text" attributeName="text-buffer" to="Connecting to phone, please wait..."/>
+  </use>
+  
+  <use id="Init_Spin" href="#spinner" width="50" height="50" x="50%-25" y="75%" fill="fb-white"/>
+  
+</svg>

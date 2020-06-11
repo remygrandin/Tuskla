@@ -1,0 +1,16 @@
+<g transform="translate(0,100%)" id="StatusBar">
+  
+  <svg x="0" y="0" width="100%" height="15%" >
+    <rect x="0" y="0" width="100%" height="100%" fill="fb-red" id="StatusBackground"/>
+    <use id="txtStatus" href="#marquee-text" x="2%" width="96%" mode="1" value="50">
+      <set href="group/text" attributeName="text-length" to="512" />
+      <set href="group/copy" attributeName="text-length" to="512" />
+
+      <set href="group/text" attributeName="text-buffer" to="Starting up..." />
+      <set href="group/separator" attributeName="width" to="100" />
+    </use>
+  </svg>
+  <animateTransform attributeType="translate" to="0,85%" from="0,100%" begin="enable" dur="1" />
+  
+  <animateTransform attributeType="translate" from="0,85%" to="0,100%" begin="disable" dur="1" />
+</g>

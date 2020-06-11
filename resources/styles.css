@@ -1,0 +1,42 @@
+#txtStatus {
+  fill: black;
+  font-size: 20;
+  font-family: System-Regular;
+  /*text-anchor: middle;*/
+  text-length: 2000;
+}
+
+.btn-inline{
+  display:inline
+}
+
+.standardTxt{
+  fill: white;
+  font-size: 24;
+  font-family: System-Regular;
+}
+
+.smallTxt{
+  fill: white;
+  font-size: 12;
+  font-family: System-Regular;
+}
+
+.dialog-third-button-left        { x: 0;     height: 72; width:  33%; }
+.dialog-third-button-center      { x: 33%+2; height: 72; width:  33%; }
+.dialog-third-button-right       { x: 66%+5; height: 72; width:  33%; }
+
+
+.titleTxt{
+  fill: white;
+  font-size: 150;
+  font-family: Colfax-Black;
+  opacity: 0.2;
+}
+
+.headerTxt{
+  fill: white;
+  font-size: 20;
+  font-family: System-Regular;
+}
+

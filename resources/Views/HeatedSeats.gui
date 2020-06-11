@@ -1,0 +1,33 @@
+<textarea width="100%" x="0" y="15%" class="titleTxt" text-anchor="middle" width="100%" height="100%" font-size="80">Heated Seats</textarea>
+<svg>
+  <use id="HS_btnOnOff" href="#square-button-toggle" y="10%" height="30%" width="100%" fill="fb-light-gray">
+    <set href="#text" attributeName="text-buffer" to="OFF" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+</svg>
+
+<use id="HS_btnS1" href="#square-button-neutral" y="40%" height="30%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-buffer" to="-" />
+  <set href="#text" attributeName="text-anchor" to="middle" />
+</use>
+<use id="HS_btnS2" href="#square-button-neutral" y="40%" x="50%" height="30%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-buffer" to="|||" />
+  <set href="#text" attributeName="text-anchor" to="middle" />
+</use>
+
+
+<use id="HS_btnS3" href="#square-button-neutral" class="dialog-third-button-left" y="70%" height="30%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-buffer" to="||" />
+  <set href="#text" attributeName="text-anchor" to="middle" />
+</use>
+
+<use id="HS_btnS4" href="#square-button-neutral" class="dialog-third-button-center" y="70%" height="30%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-buffer" to="|" />
+  <set href="#text" attributeName="text-anchor" to="middle" />
+</use>
+
+<use id="HS_btnS5" href="#square-button-neutral" class="dialog-third-button-right" y="70%" height="30%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-buffer" to="S5" />
+  <set href="#text" attributeName="text-anchor" to="middle" />
+</use>
+

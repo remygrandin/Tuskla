@@ -1,0 +1,56 @@
+<svg id="MainMenu" display="none">
+  <rect x="0" y="0" width="100%" height="100%" fill="black"/>
+  <use href="#panoramaview" id="MainMenuView">
+    <use href="#panoramaview-item">
+      
+      <use id="MENU_btnQuick" href="#square-button-icon" class="dialog-half-button-left" fill="fb-blue" x="0" y="10%" width="33%" height="90%">
+        <set href="#text" attributeName="text-anchor" to="middle" />
+        <set href="#image" attributeName="href" to="Icons/favorite-star.png" />
+      </use>
+      
+      <use id="MENU_btnFTD" href="#square-button-icon" class="dialog-half-button-left" fill="fb-red" x="33%" y="10%" width="66%" height="30%">
+        <set href="#text" attributeName="text-anchor" to="middle" />
+        <set href="#image" attributeName="href" to="Icons/unlock.png" />
+      </use>
+      
+      <use id="MENU_btnBattery" href="#square-button-icon" class="dialog-half-button-left" fill="fb-red" x="33%" y="40%" width="66%" height="30%">
+        <set href="#text" attributeName="text-anchor" to="middle" />
+        <set href="#image" attributeName="href" to="Icons/battery-full.png" />
+      </use>
+      
+      
+      <use id="MENU_btnAC" href="#square-button-icon" class="dialog-half-button-left" fill="fb-red" x="33%" y="70%" width="33%" height="30%">
+        <set href="#text" attributeName="text-anchor" to="middle" />
+        <set href="#image" attributeName="href" to="Icons/windmill.png" />
+      </use>
+      
+      <use id="MENU_btnHS" href="#square-button-icon" class="dialog-half-button-left" fill="fb-red" x="66%" y="70%" width="33%" height="30%">
+        <set href="#text" attributeName="text-anchor" to="middle" />
+        <set href="#image" attributeName="href" to="Icons/sauna-heat-stone.png" />
+      </use>
+      
+    </use>
+    <use href="#panoramaview-item">
+      <use id="MENU_btnMedia" href="#square-button-icon" class="dialog-half-button-left" fill="fb-red" x="0%" y="10%" width="100%" height="30%">
+        <set href="#text" attributeName="text-anchor" to="middle" />
+        <set href="#image" attributeName="href" to="Icons/play.png" />
+      </use>
+      
+      <use id="MENU_btnStart" href="#square-button-icon" class="dialog-half-button-left" fill="fb-red" x="0%" y="40%" width="100%" height="30%">
+        <set href="#text" attributeName="text-anchor" to="middle" />
+        <set href="#image" attributeName="href" to="Icons/keys.png" />
+      </use>
+      
+      <use id="MENU_btnAlerts" href="#square-button-icon" class="dialog-half-button-left" fill="fb-red" x="0%" y="70%" width="50%" height="30%">
+        <set href="#text" attributeName="text-anchor" to="middle" />
+        <set href="#image" attributeName="href" to="Icons/warning-triangle.png" />
+      </use>
+      
+      <use id="MENU_btnInfo" href="#square-button-icon" class="dialog-half-button-left" fill="fb-red" x="50%" y="70%" width="50%" height="30%">
+        <set href="#text" attributeName="text-anchor" to="middle" />
+        <set href="#image" attributeName="href" to="Icons/information.png" />
+      </use>
+    </use>
+  </use>
+</svg>
+  

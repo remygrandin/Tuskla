@@ -1,0 +1,68 @@
+<textarea width="100%" x="0" y="20%" class="titleTxt" text-anchor="middle" width="100%" height="100%">AC</textarea>
+<svg>
+  <use id="AC_btnOnOff" href="#square-button-toggle" y="10%" height="25%" width="100%" fill="fb-light-gray">
+    <set href="#text" attributeName="text-buffer" to="OFF" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+</svg>
+
+<svg id="AC_SyncedTemps" >
+  <use id="AC_btnAllMinus" href="#square-button-neutral" class="dialog-third-button-left" y="32%" height="38%">
+    <set href="#text" attributeName="text-buffer" to="-" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+  <use id="AC_btnAllPlus" href="#square-button-neutral" class="dialog-third-button-right" y="32%" height="38%">
+    <set href="#text" attributeName="text-buffer" to="+" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+  
+  <text id="AC_txtAllTemp" width="100%" x="50%" y="57%" class="standardTxt" text-anchor="middle" font-size="36">--.-°C</text>
+</svg>
+
+<svg id="AC_SplittedTemps" display="none">
+  <use id="AC_btnDriverMinus" href="#square-button-neutral" class="dialog-third-button-left" y="32%" height="21%">
+    <set href="#text" attributeName="text-buffer" to="-" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+  <use id="AC_btnDriverPlus" href="#square-button-neutral" class="dialog-third-button-right" y="32%" height="21%">
+    <set href="#text" attributeName="text-buffer" to="+" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+  
+  <text id="AC_txtDriverTemp" width="100%" x="50%" y="45%" class="standardTxt" text-anchor="middle" font-size="30">--.-°C</text>
+  
+  <use id="AC_btnPassengerMinus" href="#square-button-neutral" class="dialog-third-button-left" y="50%" height="21%">
+    <set href="#text" attributeName="text-buffer" to="-" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+  <use id="AC_btnPassengerPlus" href="#square-button-neutral" class="dialog-third-button-right" y="50%" height="21%">
+    <set href="#text" attributeName="text-buffer" to="+" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+  
+  <text id="AC_txtPassengerTemp" width="100%" x="50%" y="65%" class="standardTxt" text-anchor="middle" font-size="30">--.-°C</text>
+</svg>
+
+
+<svg>
+  <use id="AC_btnWindows" href="#square-button-toggle-icon" class="dialog-third-button-left" y="68%" height="25%" fill="fb-light-gray">
+    <set href="#image" attributeName="href" to="Icons/focus-frame.png" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+</svg>
+<svg>
+  <use id="AC_btnSync" href="#square-button-toggle-icon" class="dialog-third-button-center" y="68%" height="25%" fill="fb-light-gray">
+    <set href="#text" attributeName="text-buffer" to="Sync" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+</svg>
+<svg>
+  <use id="AC_btnDefrost" href="#square-button-toggle-icon" class="dialog-third-button-right" y="68%" height="25%" fill="fb-light-gray">
+    <set href="#text" attributeName="text-buffer" to="Defrost" />
+    <set href="#text" attributeName="text-anchor" to="middle" />
+  </use>
+</svg>
+
+  
+<text width="100%" class="smallTxt" x="6" y="97%" id="AC_txtIn">Temp In : XX.X°C</text>
+<text width="100%" class="smallTxt" x="50%" y="97%" id="AC_txtOut">Temp Out : XX.X°C</text>

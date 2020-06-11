@@ -1,0 +1,88 @@
+<defs>
+  <link rel='stylesheet' href='/mnt/sysassets/widgets/mixed_text_widget.css'/>
+
+  <!-- Left and top aligned mixed text widget -->
+  <symbol id="mixed-text-right-top" type='mixed-text' focusable='false' pointer-events='none' system-events='all'>
+
+    <var id="ufs_header"/>
+    <var id="dfs_header"/>
+    <var id="ufs_copy"/>
+    <var id="dfs_copy"/>
+
+    <!-- Top padding -->
+    <svg id="top-padding" class='top-align-top-padding'/>
+
+    <!-- Header -->
+    <use id="header" href='#dynamic-textarea' class='mixed-text-textarea mixed-text-header' overflow='visible'>
+      <set href='#text' attributeName='text-anchor' to='end'/>
+    </use>
+
+    <!-- Space in between -->
+    <svg id="space" class='mixed-text-space'/>
+
+    <!-- Paragraph Copy -->
+    <use id="copy" href='#dynamic-textarea' class='mixed-text-textarea mixed-text-copy' overflow='visible'>
+      <set href='#text' attributeName='text-anchor' to='end'/>
+    </use>
+
+    <!-- Bottom padding -->
+    <svg id="bottom-padding" class='top-align-bottom-padding'/>
+
+  </symbol>
+
+
+  <!-- Left and middle aligned mixed text widget -->
+  <symbol id="mixed-text-right-mid" type='mixed-text' value='1' focusable='false' pointer-events='none' system-events='all'>
+
+    <var id="ufs_header"/>
+    <var id="dfs_header"/>
+    <var id="ufs_copy"/>
+    <var id="dfs_copy"/>
+
+    <!-- Top padding -->
+    <svg id="top-padding" class='mid-align-top-padding'/>
+
+    <!-- Header -->
+    <use id="header" href='#dynamic-textarea' class='mixed-text-textarea mixed-text-header' overflow='visible'>
+      <set href='#text' attributeName='text-anchor' to='end'/>
+    </use>
+
+    <!-- Space in between -->
+    <svg id="space" class='mixed-text-space'/>
+
+    <!-- Paragraph Copy -->
+    <use id="copy" href='#dynamic-textarea' class='mixed-text-textarea mixed-text-copy' overflow='visible'>
+      <set href='#text' attributeName='text-anchor' to='end'/>
+    </use>
+
+    <!-- Bottom padding -->
+    <svg id="bottom-padding" class='mid-align-bottom-padding'/>
+
+  </symbol>
+
+  <!-- Left and bottom aligned mixed text widget -->
+  <symbol id="mixed-text-right-bottom" type='mixed-text' value='2' focusable='false' pointer-events='none' system-events='all'>
+
+    <var id="ufs_header"/>
+    <var id="dfs_header"/>
+    <var id="ufs_copy"/>
+    <var id="dfs_copy"/>
+
+    <!-- Header -->
+    <use id="header" href='#dynamic-textarea' class='mixed-text-textarea mixed-text-header' overflow='visible'>
+      <set href='#text' attributeName='text-anchor' to='end'/>
+    </use>
+
+    <!-- Space in between -->
+    <svg id="space" class='mixed-text-space'/>
+
+    <!-- Paragraph Copy -->
+    <use id="copy" href='#dynamic-textarea' class='mixed-text-textarea mixed-text-copy' overflow='visible'>
+      <set href='#text' attributeName='text-anchor' to='end'/>
+    </use>
+
+    <!-- Bottom padding -->
+    <svg id="bottom-padding" class='bottom-align-bottom-padding'/>
+
+  </symbol>
+</defs>

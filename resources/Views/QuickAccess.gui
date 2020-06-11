@@ -1,0 +1,28 @@
+<textarea width="100%" x="0" y="15%" class="titleTxt" text-anchor="middle" width="100%" height="100%" font-size="80">Quick Access</textarea>
+
+<use id="Q_OpenFrunk" href="#square-button-neutral" y="10%" height="30%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" /> 
+  <set href="#text" attributeName="text-buffer" to="Frunk" />
+</use>
+<use id="Q_OpenTrunk" href="#square-button-neutral" y="10%" x="50%" height="30%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" /> 
+  <set href="#text" attributeName="text-buffer" to="Trunk" />
+</use>
+
+<use id="Q_Unlock" href="#square-button-neutral-icon" y="40%" height="30%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/unlock.png" />
+</use>
+<use id="Q_OpenChargePort" href="#square-button-neutral-icon" y="40%" x="50%" height="30%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/logout.png" />
+</use>
+
+<use id="Q_Start" href="#square-button-neutral-icon" y="70%" height="30%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/keys.png" />
+</use>
+<use id="Q_FlashLights" href="#square-button-neutral-icon" y="70%" x="50%" height="30%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/light-bulb.png" />
+</use>

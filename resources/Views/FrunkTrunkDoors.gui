@@ -1,0 +1,25 @@
+<textarea x="0" y="10%" class="titleTxt" text-anchor="middle" width="100%" height="100%" font-size="60">Frunk
+Trunk
+Doors</textarea>
+
+<use id="FTD_btnFrunk" href="#square-button-neutral" class="dialog-third-button-left" y="10%" height="90%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-buffer" to="Frunk" />
+  <set href="#text" attributeName="text-anchor" to="middle" />
+</use>
+
+
+<use id="FTD_btnLock" href="#square-button-neutral-icon" class="dialog-third-button-center" y="10%" height="45%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/lock.png" />
+</use>
+
+<use id="FTD_btnUnlock" href="#square-button-neutral-icon" class="dialog-third-button-center" y="55%" height="45%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/unlock.png" />
+</use>
+
+
+<use id="FTD_btnTrunk" href="#square-button-neutral" class="dialog-third-button-right" y="10%" height="90%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-buffer" to="Trunk" />
+  <set href="#text" attributeName="text-anchor" to="middle" />
+</use>

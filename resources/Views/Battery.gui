@@ -1,0 +1,58 @@
+<defs>
+  <symbol id="battery">
+    <section>
+      <section x="0" y="0" width="95%" height="100%">
+        <g id="pct" >
+          <rect x="0" y="0" width="100%" height="100%" fill="green" opacity="0.5">
+          </rect>
+        </g>
+      </section>
+      
+      <rect x="95%" y="30%" width="5%" height="40%" fill="fb-white"/>      
+      
+      <line x1="0" y1="0" x2="95%" y2="0" fill="fb-white" stroke-width="2" />
+
+      <line x1="95%" y1="0" x2="95%" y2="30%" fill="fb-white" stroke-width="2" />
+      <line x1="95%" y1="30%" x2="100%" y2="30%" fill="fb-white" stroke-width="2" />
+      <line x1="100%" y1="30%" x2="100%" y2="70%" fill="fb-white" stroke-width="2" />  
+      <line x1="100%" y1="70%" x2="95%" y2="70%" fill="fb-white" stroke-width="2" />
+      <line x1="95%" y1="70%" x2="95%" y2="100%" fill="fb-white" stroke-width="2" />
+
+      <line x1="95%" y1="100%" x2="0" y2="100%" fill="fb-white" stroke-width="2" />
+
+      <line x1="0" y1="100%" x2="0" y2="0" fill="fb-white" stroke-width="2" />
+      
+      
+    </section>
+  </symbol>
+</defs>
+<textarea width="100%" x="0" y="35%" class="titleTxt" text-anchor="middle" width="100%" height="100%" font-size="80">Battery</textarea>
+<use href="#scrollview">
+  <use href="#scrollview-item">
+    <use id="B_MainBattery" href="#battery" x="40%" y="20%" width="50%" height="30%"/>
+    
+    <text id="B_Charge" class="standardTxt" x="50%" y="63%" text-anchor="middle" font-size="25" text-length="10">--%</text>
+    <text id="B_MaxRange" class="standardTxt" x="75%" y="63%" text-anchor="middle" font-size="25" text-length="10">---Km</text>
+
+    <use id="B_OpenChargePort" href="#square-button-neutral-icon" class="dialog-third-button-left" y="10%" height="60%" fill="fb-light-gray">
+      <set href="#image" attributeName="href" to="Icons/logout.png" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+
+    <use id="B_CloseChargePort" href="#square-button-neutral-icon" class="dialog-third-button-left" y="70%" height="30%" fill="fb-light-gray">
+      <set href="#image" attributeName="href" to="Icons/login.png" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+
+    <use id="B_StartStopCharge" href="#square-button-neutral-icon" class="dialog-third-button-center" y="70%"  height="30%" width="66%" fill="fb-light-gray">
+      <set href="#text" attributeName="text-buffer" to="Start Charge" />
+      <set href="#text" attributeName="text-anchor" to="middle" />
+    </use>
+  </use>
+  <!--
+  <use href="#scrollview-item">
+    <text class="standardTxt" x="50%" y="20%" text-anchor="middle" font-size="25">Charge Limit</text>
+    <use id="B_LimitBattery" href="#battery" x="10%" y="30%" width="80%" height="40%"/>
+  </use>
+  -->
+</use>

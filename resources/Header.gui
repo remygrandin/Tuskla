@@ -1,0 +1,2 @@
+<text text-length="256" id="glb_txtName" class="headerTxt" x="6" y="18">Tesla RC</text>
+<text text-length="256" id="glb_txtBatteryCharge" class="headerTxt" x="100%-6" y="18" text-anchor="end">--%</text>

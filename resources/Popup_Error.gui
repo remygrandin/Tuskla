@@ -1,0 +1,9 @@
+<svg id="Popup_Error" display="none">
+  <rect x="0" y="0" width="100%" height="100%" fill="black"/>
+  <use id="Err_Text" href="#mixed-text-center-top" height="100%" fill="fb-red">
+    <set href="#header/text" attributeName="text-length" to="128" />
+    <set href="#header/text" attributeName="text-buffer" to="Error"/>
+    <set href="#copy/text" attributeName="text-length" to="128" />
+    <set href="#copy/text" attributeName="text-buffer" to="An error has appened, That's very bad. Like very very very bad..."/>
+  </use>
+</svg>

@@ -1,0 +1,14 @@
+<textarea width="100%" x="0" y="30%" class="titleTxt" text-anchor="middle" width="100%" height="100%" font-size="80">Infos</textarea>
+<use href="#scrollview">
+  <use href="#scrollview-item">
+    <text text-length="64" id="INFO_txtName" class="standardTxt" x="5" y="25%">Car Name : </text>
+    <text text-length="64" id="INFO_txtOdometer" class="standardTxt" x="5" y="$+5">Odometer : </text>
+    <text text-length="64" id="INFO_txtVIN" class="standardTxt" x="5" y="$+5">VIN : </text>
+    <text text-length="64" id="INFO_txtOSVersion" class="standardTxt" x="5" y="$+5">OS Version : </text>
+        <text text-length="64" id="INFO_txtBatteryCharge" class="standardTxt" x="5" y="$+5">Battery Charge : </text>
+  </use>
+  <use href="#scrollview-item">
+
+    <text text-length="64" id="INFO_txtEstimatedRange" class="standardTxt" x="5" y="$+5">Estimated Range : </text>
+  </use>
+</use>

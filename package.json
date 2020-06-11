@@ -1,0 +1,27 @@
+{
+  "fitbit": {
+    "appUUID": "25ac7080-f433-4c98-9bc3-79efad29605d",
+    "appType": "app",
+    "appDisplayName": "Tesla",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#f44336",
+    "requestedPermissions": [
+      "access_internet"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Tesla"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0"
+  }
+}

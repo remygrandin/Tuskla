@@ -1,0 +1,79 @@
+<svg>
+
+  <!--<rect class="item" fill="#333333" width="100%" height="100%"/>-->
+
+  <use href="#panoramaview" id="panViews">
+    <use href="#panoramaview-item" id="panInfo"> <!-- ============ Info ============ -->
+      <link rel="import" href="Views/Infos.gui" />
+    </use>
+    
+    <use href="#panoramaview-item" id="panQuick"> <!-- ============ Quick Access ============ -->
+      <link rel="import" href="Views/QuickAccess.gui" />
+    </use>
+    
+    <use href="#panoramaview-item" id="panFrunkTrunk"> <!-- ============ Frunk & Trunk & Doors ============ -->
+      <link rel="import" href="Views/FrunkTrunkDoors.gui" />
+    </use>
+    
+    <use href="#panoramaview-item" id="panAC"> <!-- ============ AC ============ -->
+      <link rel="import" href="Views/AC.gui" />
+    </use>
+    
+    <use href="#panoramaview-item" id="panHeatedSeats"> <!-- ============ Heated Seats ============ -->
+      <link rel="import" href="Views/HeatedSeats.gui" />
+    </use>
+    
+    <use href="#panoramaview-item" id="panMedia"> <!-- ============ Media ============ -->
+      <link rel="import" href="Views/Media.gui" />
+    </use>
+    
+    <use href="#panoramaview-item" id="panBattery"> <!-- ============ Battery ============ -->
+      <link rel="import" href="Views/Battery.gui" />
+    </use>
+
+    <use href="#panoramaview-item" id="panStart">
+      <link rel="import" href="Views/Start.gui" />
+    </use>
+    
+    <use href="#panoramaview-item" id="panAlerts">
+      <link rel="import" href="Views/Alerts.gui" />
+    </use>
+
+
+    
+    <rect x="0" y="0" width="100%" height="10%" fill="fb-red" />
+    
+    <use id="pagination-dots" href="#pagination-widget" y="8">
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-highlight-dot" />
+    </use>
+  </use>
+
+
+  
+  <link rel="import" href="Menu.gui" />
+  
+
+  <link rel="import" href="StatusBar.gui" />
+  
+  <link rel="import" href="Header.gui" />
+  
+  <link rel="import" href="Popup_Init.gui" />
+  <link rel="import" href="Popup_Error.gui" />
+  
+</svg>

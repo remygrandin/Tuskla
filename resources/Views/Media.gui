@@ -1,0 +1,26 @@
+<textarea width="100%" x="0" y="35%" class="titleTxt" text-anchor="middle" width="100%" height="100%" font-size="80">Media</textarea>
+
+<use id="M_Prev" href="#square-button-neutral-icon" class="dialog-third-button-left" y="10%" height="45%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/previous.png" />
+</use>
+
+<use id="M_PlayPause" href="#square-button-neutral-icon" class="dialog-third-button-center" y="10%" height="45%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/play-pause.png" />
+</use>
+
+<use id="M_Next" href="#square-button-neutral-icon" class="dialog-third-button-right" y="10%" height="45%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/next.png" />
+</use>
+
+<use id="M_VolMinus" href="#square-button-neutral-icon" y="55%" height="45%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/volume-down.png" />
+</use>
+
+<use id="M_VolPlus" href="#square-button-neutral-icon" y="55%" x="50%" height="45%" width="50%" fill="fb-light-gray">
+  <set href="#text" attributeName="text-anchor" to="middle" />
+  <set href="#image" attributeName="href" to="Icons/volume-up.png" />
+</use>
