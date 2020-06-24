@@ -4,7 +4,7 @@ Tesla control app for fitbit smartwatch
 
 ## Warning
 This app is very much in Alpha, please do no depend your life on it. 
-Refer to the [MIT Liscence](https://raw.githubusercontent.com/remygrandin/Tuskla/master/LICENSE) for all other warnings and details.
+Refer to the [MIT Licence](https://raw.githubusercontent.com/remygrandin/Tuskla/master/LICENSE) for all other warnings and details.
 Please report any problem in the issues section of this repo.
 
 ## Setup Guide
@@ -50,9 +50,27 @@ The main menu have 2 sections, swipe left to access the 2nd section.
 <img src="https://github.com/remygrandin/Tuskla/raw/master/docs/App_MainMenu_2.png" width="300">
 
 - Play : Media Control
-- Keys : Remote Start
+- Keys : Remote Start (Allow keyless start for 2 minutes)
 - Battery : Charge & Chargeport
 - Warning : Honk & Light Flashing
 - Info : Car's Infos
+
+### Quick Access
+<img src="https://github.com/remygrandin/Tuskla/raw/master/docs/App_Panel_QuickAccess.png" width="300">
+
+- Frunk : Open the front trunk (frunk)
+- Trunk : Open the rear trunk
+- Padlock : Unlock all doors
+- Rectangle with arrow : open/unlock charging port
+- Keys : Remote start (Allow keyless start for 2 minutes)
+- Lightbulb : Flash car lights.
+
+### Frunk, Trunk & Doors
+<img src="https://github.com/remygrandin/Tuskla/raw/master/docs/App_Panel_FTD.png" width="300">
+
+- Frunk : Open the front trunk (frunk)
+- Closed Padlock : Lock all doors
+- Opened Padlock : Unlock all doors
+- Trunk : Open the rear trunk
 
 
