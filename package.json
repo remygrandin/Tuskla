@@ -2,7 +2,7 @@
   "fitbit": {
     "appUUID": "25ac7080-f433-4c98-9bc3-79efad29605d",
     "appType": "app",
-    "appDisplayName": "Tesla",
+    "appDisplayName": "Tuskla",
     "iconFile": "resources/icon.png",
     "wipeColor": "#f44336",
     "requestedPermissions": [
@@ -16,7 +16,7 @@
     ],
     "i18n": {
       "en": {
-        "name": "Tesla"
+        "name": "Tuskla"
       }
     },
     "defaultLanguage": "en-US"

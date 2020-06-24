@@ -8,7 +8,7 @@ function GenerateSettings(props) {
       
       <Section title={<Text bold align="center">About</Text>}>
         <Text>Version : 0.1 - Alpha</Text>
-        <Text>Made with EV love by Remy GRANDIN.</Text>        
+        <Text>Made with EV love by Rémy GRANDIN.</Text>        
         <Link source="https://github.com/remygrandin/Tuskla">Under MIT Liscence. Source code available here</Link>
         <Link source="https://www.streamlineicons.com/">Free Icons from the Streamline Icons Pack</Link>
       </Section>
