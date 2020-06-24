@@ -7,7 +7,7 @@ function GenerateSettings(props) {
       <TextInput label="Car Name (use if multiple cars)" type="email" settingsKey="carName" />
       
       <Section title={<Text bold align="center">About</Text>}>
-        <Text>Version : 0.1 - Alpha</Text>
+        <Text>Version : 0.2 - Alpha</Text>
         <Text>Made with EV love by Rémy GRANDIN.</Text>        
         <Link source="https://github.com/remygrandin/Tuskla">Under MIT Liscence. Source code available here</Link>
         <Link source="https://www.streamlineicons.com/">Free Icons from the Streamline Icons Pack</Link>
