@@ -209,7 +209,7 @@ async function cmd_in_CheckToken(evt){
   }
   catch (error)
   {
-    sendData({ type:'error', error: error });
+    sendData({ type:'Error', error: error });
   }
 }
 
@@ -220,7 +220,7 @@ async function cmd_in_WakeUp(evt){
   }
   catch (error)
   {
-    sendData({ type:'error', error: error });
+    sendData({ type:'Error', error: error });
   }
 }
 

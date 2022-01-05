@@ -1,4 +1,7 @@
 {
+  "devDependencies": {
+    "@fitbit/sdk": "~4.3.0"
+  },
   "fitbit": {
     "appUUID": "25ac7080-f433-4c98-9bc3-79efad29605d",
     "appType": "app",
@@ -9,19 +12,13 @@
       "access_internet"
     ],
     "buildTargets": [
-      "higgs",
-      "meson",
-      "gemini",
-      "mira"
+      "higgs"
     ],
     "i18n": {
-      "en": {
+      "en-US": {
         "name": "Tuskla"
       }
     },
     "defaultLanguage": "en-US"
-  },
-  "devDependencies": {
-    "@fitbit/sdk": "~4.1.0"
   }
 }

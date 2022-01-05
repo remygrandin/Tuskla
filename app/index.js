@@ -95,10 +95,14 @@ messaging.peerSocket.onmessage = function(evt) {
           case "UpdateInfos":
             cmd_in_UpdateInfos(evt);
             break;
+
           default:
             console.error("Unknow response received : " + evt.data.response);
             break;
         }
+        break;
+      case "Error":
+        cmd_in_Error(evt);
         break;
       default:
         console.error("Unknow type received : " + evt.data.type);
@@ -112,7 +116,7 @@ messaging.peerSocket.onmessage = function(evt) {
 messaging.peerSocket.onerror = function(err) {
   // Handle any errors
   console.log("Connection error: " + err.code + " - " + err.message);
-  Shr.setStatusText("/!\ Connection error with phone !");
+  Shr.SetStatusText("/!\ Connection error with phone !");
   
   Shr.PopupError("Connection Error", "Failed connecting with phone !");
 }
@@ -124,7 +128,16 @@ messaging.peerSocket.onopen = function() {
   cmd_out_CheckToken();
   //cmd_out_GetInfos();
 }
+
+function cmd_in_Error(err)
+{  
   
+  console.log("General error: " + err.data.error );
+  Shr.SetStatusText("/!\ An error occured");
+  
+  Shr.PopupError("API Error", "An API error occured : " + err.data.error);
+}
+
 function cmd_in_InitOk(evt)
 {
   Shr.PopupInit("Waking Up Car", "Waking Up your tesla...")

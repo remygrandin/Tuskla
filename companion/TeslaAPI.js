@@ -94,7 +94,7 @@ TeslaAPI.prototype.CheckToken = async function() {
     console.log("    Token not found, regenerating it ...");
     if(!await this.GetNewToken())
     {
-      throw "Error authenticating, please check your login/password in the API";
+      throw "Error authenticating, please check your refresh token in the app settings";
       return;
     }    
   }
@@ -108,7 +108,7 @@ TeslaAPI.prototype.CheckToken = async function() {
     console.log("    Token expired, regenerating it ...");
     if(!await this.GetNewToken())
     {
-      throw "Error authenticating, please check your login/password in the API";
+      throw "Error authenticating, please check your refresh token in the app settings";
       return;
     }   
   }
@@ -122,7 +122,7 @@ TeslaAPI.prototype.CheckToken = async function() {
     console.log("    Regenerating it ...");
     if(!await this.GetNewToken())
     {
-      throw "Error authenticating, please check your login/password in the API";
+      throw "Error authenticating, please check your refresh token in the app settings";
       return;
     }
   }
@@ -132,37 +132,50 @@ TeslaAPI.prototype.CheckToken = async function() {
 
 
 TeslaAPI.prototype.GetNewToken = async function() {
-  let response = await fetch("https://owner-api.teslamotors.com/oauth/token", {
-    method: 'POST',
-    headers: {
-      'User-Agent': 'Dev-Fitbitapp',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      email: JSON.parse(settingsStorage.getItem("userEmail")).name,
-      password: JSON.parse(settingsStorage.getItem("userPassword")).name,
-      grant_type: 'password',
-      client_id: TeslaClientId,
-      client_secret: TeslaClientSecret      
-    })
-  });
-  
-  if(response.ok)
-  {
-    let respjson = await response.clone().json();
-    
-    localStorage.setItem("oauth-token", respjson.access_token)
-    localStorage.setItem("oauth-expireat", respjson.created_at + respjson.expires_in - (24*60*60)) // we substract 1 day of the standard 45 days expiracy date to ensure no UTC suckery      
-    
-    return true;
+  try
+  {    
+    if(settingsStorage.getItem("refreshToken") == null)
+    {
+      return false
+    }
+
+    let response = await fetch("https://auth.tesla.com/oauth2/v3/token", {
+      method: 'POST',
+      headers: {
+        'User-Agent': 'Dev-Fitbitapp',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        grant_type: 'refresh_token',
+        client_id: 'ownerapi',
+        refresh_token: JSON.parse(settingsStorage.getItem("refreshToken")).name,
+        scope: "openid email offline_access"
+      })
+    });
+
+
+
+    if(response.ok)
+    {
+      let respjson = await response.clone().json();
+
+      localStorage.setItem("oauth-token", respjson.access_token)
+      localStorage.setItem("oauth-expireat", Math.round(Date.now() / 1000) + respjson.expires_in)
+
+      return true;
+    }
+    else
+    {
+      let resptext = await response.clone().text();
+
+      console.log("Error at authentication (" + response.status + ") : " + resptext);
+      return false;
+    }
   }
-  else
+  catch
   {
-    let resptext = await response.clone().text();
-    
-    console.log("Error at authentication (" + response.status + ") : " + resptext);
     return false;
-  }  
+  }
 };
 
 TeslaAPI.prototype.GetVehicleList = async function() {
@@ -208,11 +221,11 @@ TeslaAPI.prototype.GetVehicleAPIId = async function(carName) {
 
 
 TeslaAPI.prototype.GetVehicleStatus = async function(vehId) {
-  return (await callGETAPI("/api/1/vehicles/" + vehId)).response;;
+  return (await callGETAPI("/api/1/vehicles/" + vehId)).response;
 };
 
 TeslaAPI.prototype.GetVehicleData = async function (vehId){
-  return (await callGETAPI("/api/1/vehicles/" + vehId + "/vehicle_data")).response;;
+  return (await callGETAPI("/api/1/vehicles/" + vehId + "/vehicle_data")).response;
 }
 
 
@@ -348,3 +361,4 @@ TeslaAPI.prototype.FlashLights = async function (vehId){
 TeslaAPI.prototype.HonkHorn = async function (vehId){
     return (await callPOSTAPI("/api/1/vehicles/" + vehId + "/command/honk_horn")).response;
 }
+
